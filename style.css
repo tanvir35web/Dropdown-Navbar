@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--secondary);
+}
+
+:root {
+    --primary: rgb(0, 21, 11);
+    --secondary: rgb(255, 255, 255);
+    --tertiary: rgba(0, 57, 30, 0.956);
+}
+
+.navMenu {
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 5rem;
+}
+
+.navMenu .brandLogo {
+    font-size: 3rem;
+}
+
+.navItem ul {
+    display: flex;
+    font-size: 1.5rem;
+    
+}
+
+.navItem ul li {
+    list-style: none;
+    text-decoration: none;
+    padding: 1.5rem 3rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.navItem ul li a {
+    text-decoration: none;
+}
+
+.navItem ul li:hover {
+    background-color: var(--tertiary);
+}
+
+
+/* Dropdown Project */
+
+.dropDown-project{
+    display: none;
+}
+.navItem ul li:hover .dropDown-project {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--primary);
+    
+}
+
+.dropDown-project ul {
+    display: block;
+    
+}
+
+.dropDown-project ul li {
+    width: 200px;
+    padding: 20px 40px;
+    position: relative;
+}
+
+/* Dropdown Portfolio */
+
+.dropdown-portfolio {
+    display: none;
+}
+
+.dropDown-project ul li:hover .dropdown-portfolio {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    background-color: var(--primary);
+}
+
+
+/* Icon position */
+
+.fas {
+    float: right;
+    margin-left: 20px;
+    padding-top: 3px;
+}
